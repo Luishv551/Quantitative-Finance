@@ -17,12 +17,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-class StockInfo(TypedDict):
-    """Type definition for stock information."""
-    dividend_yield: float
-    current_price: float
-    short_name: str
-    sector: str
 
 @dataclass
 class DividendResult:
